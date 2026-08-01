@@ -1,8 +1,23 @@
 aid: silk
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/silk.png
 name: Silk
-description: 'Silk is a company surfaced as a portfolio company of insight-partners and added to the API
-  Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Silk (Silk Security) was a cybersecurity company backed by Insight Partners that built an
+  exposure, vulnerability and security-finding correlation / risk-prioritization platform. As of this
+  enrichment pass its primary domain silk.security issues a verified 301 redirect to armis.com,
+  indicating the company and product have been absorbed into Armis; no standalone Silk developer or API
+  surface (developer portal, OpenAPI, SDKs, docs, or status page) is currently published, so there is no
+  independent API to enrich beyond a domain-security probe of the still-live silk.security host.'
 url: https://raw.githubusercontent.com/api-evangelist/silk/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +25,19 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: armis
+x-domain-redirect: https://www.armis.com/
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Cybersecurity
+- Security
+- Vulnerability Management
+- Exposure Management
+- Risk
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/silk-domain-security.yml
 - type: Website
   url: https://www.silk.security/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
