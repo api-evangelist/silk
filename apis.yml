@@ -50,6 +50,13 @@ tags:
 - Security
 - Vulnerability Management
 - Exposure Management
+- Risk Management
+tags_raw:
+- Company
+- Cybersecurity
+- Security
+- Vulnerability Management
+- Exposure Management
 - Risk
 apis: []
 maintainers:
